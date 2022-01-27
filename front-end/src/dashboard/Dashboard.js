@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { listReservations } from "../utils/api";
 import ErrorAlert from "../layout/ErrorAlert";
+import { today } from "../utils/date-time";
+//reservation Details.js
+import DetailReservationList from "../reservations/DetailReservationList";
+import TableList from "../Tables/TableList";
 
 /**
  * Defines the dashboard page.
@@ -14,7 +18,14 @@ function Dashboard({ date }) {
 
   useEffect(loadDashboard, [date]);
 
-  function loadDashboard() {
+  //date must show whichever date the user chooses
+  //i.e. today, previous, next, or chosen date from calendar
+  //selectedDate variable
+  //conditional: if today, if previous, if tomorrow, if
+  const stringDate = today()
+console.log(stringDate)
+ 
+function loadDashboard() {
     const abortController = new AbortController();
     setReservationsError(null);
     listReservations({ date }, abortController.signal)
@@ -23,12 +34,17 @@ function Dashboard({ date }) {
     return () => abortController.abort();
   }
 
+
+
   return (
     <main>
-      <h1>Dashboard</h1>
+      <h1>All Reservations</h1>
       <div className="d-md-flex mb-3">
-        <h4 className="mb-0">Reservations for date</h4>
+        <h4 className="mb-0">{date}</h4>
       </div>
+      {/* <Details /> */}
+      <DetailReservationList/>
+      <TableList/>
       <ErrorAlert error={reservationsError} />
       {JSON.stringify(reservations)}
     </main>
