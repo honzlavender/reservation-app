@@ -1,4 +1,5 @@
 /* //CARD COMPONENT displays all details about the reservation as props
+
 "first_name": "Rick",
 "last_name": "Sanchez",
 "mobile_number": "202-555-0164",

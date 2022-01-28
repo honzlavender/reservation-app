@@ -8,9 +8,20 @@
 
 function NewTable() {
   return (
-    <div className="colomn">
-      <input type="text" className="table_name" placeholder="table name" />
-      <input type="text" className="capacity" placeholder="capacity" />
+    <div className="column">
+      <input 
+      type="text" 
+      name="table_name"
+      className="form-control"
+      id="table-name"
+      placeholder="table name"
+      />
+      <input 
+      type="number" 
+      name="capacity"
+      className="form-control"
+      id="capacity"
+      placeholder="capacity" />
 
     </div>
   );

@@ -35,7 +35,7 @@ async function updateStatus(req, res, next) {
   const { status } = req.body.data;
 
   const data = await reservationsService.update(reservation_id, status);
-  res.status(200).json({ data })
+  res.status(200).json({ data });
 }
 
 //update reservation
@@ -46,7 +46,7 @@ async function update(req, res) {
     reservation_id,
   };
   const data = await reservationsService.updateRes(updatedRes);
-  res.json({ data })
+  res.json({ data });
 }
 
 //VALIDATE EXIST
@@ -77,11 +77,11 @@ function hasPeople(req, res, next) {
 function hasValidDateTime(req, res, next) {
   const { reservation_date, reservation_time } = req.body.data;
   let today = new Date();
-  let day = `${reservation_date}  ${reservation_time}`
+  let day = `${reservation_date}  ${reservation_time}`;
   let resAsDate = new Date(day);
 
   const now = Date.now();
-  const pastReservation = new Date(reservation_date)
+  const pastReservation = new Date(reservation_date);
 
   const timeReg = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
   const dateReg = /^\d{4}\-\d{1,2}\-\d{1,2}$/;
@@ -111,10 +111,10 @@ function hasValidDateTime(req, res, next) {
       message: "Reservation must be booked for future date.",
     });
   }
-  if (reservation_time < '10:30' || reservation_time > '21:30') {
+  if (reservation_time < "10:30" || reservation_time > "21:30") {
     return next({
       status: 400,
-      message: 'Reservation must be between 10:30AM and 9:30PM.',
+      message: "Reservation must be between 10:30AM and 9:30PM.",
     });
   }
   next();
@@ -123,19 +123,19 @@ function hasValidDateTime(req, res, next) {
 //VALIDATE STATUS OF RESERVATION
 function reservationStatus(req, res, next) {
   const { status } = req.body.data;
-  
-  if(status === 'seated') {
-    return next ({
+
+  if (status === "seated") {
+    return next({
       status: 400,
-      message: `reservation is seated`
-    })
+      message: `reservation is seated`,
+    });
   }
 
-  if(status === 'finished') {
-    return next ({
+  if (status === "finished") {
+    return next({
       status: 400,
-      message: `reservation is finished`
-    })
+      message: `reservation is finished`,
+    });
   }
   next();
 }
@@ -164,7 +164,7 @@ const isMissing = hasProperties(
   "reservation_date",
   "reservation_time",
   "people"
-); 
+);
 
 //valid data
 const VALID_PROPERTIES = [
@@ -195,10 +195,10 @@ module.exports = {
     isMissing,
     hasValidDateTime,
     reservationExists,
-    asyncErrorBoundary(update)
+    asyncErrorBoundary(update),
   ],
   updateStatus: [
     asyncErrorBoundary(reservationExists),
-    asyncErrorBoundary(updateStatus)
-  ]
+    asyncErrorBoundary(updateStatus),
+  ],
 };

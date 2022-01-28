@@ -68,14 +68,13 @@ export async function listReservations(params, signal) {
     .then(formatReservationTime);
 }
 
-
 /**
  * Retrieves all existing tables.
  */
 
 export async function listTables(params, signal) {
   const url = new URL(`${API_BASE_URL}/tables`);
-  return await fetchJson(url, {signal})
+  return await fetchJson(url, { signal });
 }
 
 /**
@@ -87,8 +86,21 @@ export async function createReservation(reservation, signal) {
   const options = {
     method: "POST",
     headers,
-    body: JSON.stringify({data: reservation }),
+    body: JSON.stringify({ data: reservation }),
     signal,
   };
-  return await fetchJson(url, options)
+  return await fetchJson(url, options);
+}
+
+/**
+ * reads reservations
+ */
+export async function readReservation(reservationId, signal) {
+  const url = `${API_BASE_URL}/reservations/${reservationId}`;
+  const options = {
+    method: "GET",
+    headers,
+    signal,
+  };
+  return await fetchJson(url, options).then(formatReservationDate);
 }
