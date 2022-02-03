@@ -1,0 +1,40 @@
+
+.new-res {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 2em;    
+    font-family: 'Pacifico', cursive;
+}
+
+input.form-control {
+    text-align: left;
+    font-size: 1em;
+}
+
+.new-edit {
+    margin: 0 6vw;
+}
+
+label {
+    margin-bottom: 0;
+    margin-top: 1vh;
+    font-size: 1.5em;
+}
+
+.cancel-btn,
+.submit-btn {
+    font-size: 2vw;
+    background-color: #2a6f97;
+    color: #feeded;
+    border: none;
+    margin: 1vw;
+    padding: 1vw 2vw .5vw;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.newEdit-btn {
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+.search {
+    text-align: center;
+    margin-top: 8em;
+    /* width: 50vw; */
+}
+
+.container-reservation {
+    text-align: left;
+    margin: 1vh 0 3vh;
+}
+
+.search-form {
+    font-size: 1em;
+    height: 4vh;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+}
+
+h3{
+    font-size: 5vw;
+    font-family: 'Pacifico', cursive;
+}
+
+.noneFound {
+    font-size: 6vw;
+}
+
+.search-button {
+    /* padding: 4px; */
+    /* border: none; */
+    color: #fff;
+    background-color: #2a6f97;
+
+}
+
+span.oi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em; 
+}
+

@@ -1,0 +1,23 @@
+
+.seats {
+    margin: 0 7vw;
+}
+
+.seat-title {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 2em;
+    font-family: 'Pacifico', cursive;
+}
+
+.seat-form {
+    text-align: center;
+}
+
+.options {
+    font-size: 1.5em;
+}
+
+select {
+    width: 25vw;
+}

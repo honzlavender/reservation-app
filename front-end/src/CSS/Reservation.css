@@ -1,0 +1,76 @@
+.container-reservation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.col-res {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 17em;
+}
+
+.card-header {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+  background-color: #2a6f97;
+  width: 30vw;
+  text-align: center;
+  margin: 3vh 4vw 0;
+  border-radius: 25%;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+h5.name {
+  font-size: 2vw;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+p.card-title {
+  font-size: 2vw;
+  margin: 0 5vw;
+}
+
+.card-body {
+  padding: 1em;
+  margin-bottom: 1vh;
+}
+.card-title {
+  font-family: "Dongle";
+  padding: 0;
+  margin: 0;
+}
+
+.btn-seat {
+  font-size: 1em;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #468faf;
+}
+
+.btn-edit {
+  font-size: 1em;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #2a6f97;
+  
+}
+
+.btn-cancel {
+  font-size: 1em;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #013a63;
+}

@@ -1,0 +1,45 @@
+/* minimal css for dashboard calender, title, and buttons*/
+
+
+div.row{
+    margin-bottom: 10em;
+}
+.main {
+    text-align: center;
+}
+.title {
+    font-size: 5vw;
+    font-family: 'Pacifico', cursive;
+    /* text-transform: lowercase; */
+}
+ 
+.date-format {
+    text-transform: uppercase;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5em;
+}
+
+.prev,
+.today,
+.next {
+    font-size: 1.5vw;
+    background-color: #cd3e3d;
+    color: #feeded;
+    border: none;
+    margin: 1vw;
+    padding: 1vw 2vw .5vw;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.calendar {
+    /* background-color: #fdaead; */
+    text-align: right;
+    width: 8em;
+    font-size: 2vw;
+     border: #fdaead;
+     background-color: #fff;
+    margin: 2vh;
+}

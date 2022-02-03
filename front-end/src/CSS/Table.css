@@ -1,0 +1,49 @@
+
+.tables-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.table {
+    flex: 30%;
+    width: 50%;
+    margin: 1vw;
+}
+
+.card {
+    padding: 1vw;
+}
+
+p.status {
+    font-size: .8em;
+    margin-bottom: 0;
+}
+.table-name {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+}
+
+p.capacity {
+    /* font-size: clamp(0.95rem, 4vw, 1rem); */
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}  
+
+
+/* finish button */
+
+.finish {
+    font-size: 2vw;
+    background-color: #2a6f97;
+    color: #feeded;
+    border: none;
+    margin: 1vw;
+    padding: 1vw 2vw .5vw;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
