@@ -1,5 +1,7 @@
 # Capstone: Restaurant Reservation System
 
+[Deployed Application]
+
 ## Installation
 
 1. Run npm install to install project dependencies.
