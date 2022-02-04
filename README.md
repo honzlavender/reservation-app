@@ -1,6 +1,6 @@
 # Capstone: Restaurant Reservation System
 
-[Deployed Application]
+[Deployed Application](https://honz-reservation-frontend.herokuapp.com/dashboard?date=2022-02-03)
 
 ## Installation
 
@@ -9,31 +9,34 @@
 3. Run the full test suite with npm run test.
 4. To run frontend and backend tests separately run npm run test:frontend or npm run test:backend
 
-Use `npm start` to run the application.
+Use `npm start` to run the application.<br/>
+For back-end: `npm run start:backend`<br/>
+For front-end `npm run start:frontend`
 
 
-## App Summary
-
+## What Does It Do?
+This app is intended for restaurants, bars, or any other spaces that take reservations. <br/>
 •Allows users to create, edit, and delete reservations. <br/>
 •Allows for users to create tables. <br/>
 •Reservations can be sat at the tables and finished when they are done. <br/>
 •Allows for users to search for existing reservations by phone number. <br/>
 
 ## API Documentation
-API Path	Method(s)<br/>
-/reservations	GET: List all reservations<br/>
-/reservations	POST: Create a new reservation.<br/>
-/reservations/?date='YYYY-MM-DD'	GET: List all reservations by date.<br/>
-/reservations/:reservation_id	GET: Read a single reservation by 'reservation_id'.<br/>
-/reservations/:reservation_id	PUT: Update a reservation by 'reservation_id'.<br/>
-/reservations/:reservation_id	DELETE: Delete a reservation by 'reservation_id'.<br/>
-/reservations/:reservation_id/status	PUT: Update a reservation's status. Options being "booked", "seated", or "finished".<br/>
-/tables	GET: List all tables.<br/>
-/tables	POST: Create a new table.<br/>
-/tables/:table_id	GET: Read a single table by 'table_id'.<br/>
-/tables/:table_id	DELETE: Delete a table by 'table_id'.<br/>
-/tables/:table_id/seat	PUT: Update a table's status to "occupied".<br/>
-/tables/:table_id/seat	DELETE: Update a table's status to "free".<br/>
+| API Path | Method(s)<br/> |
+|-------|--------|
+| /reservations	|GET: List all reservations<br/>
+| /reservations	|POST: Create a new reservation.<br/>
+| /reservations/?date='YYYY-MM-DD'	|GET: List all reservations by date.<br/>
+| /reservations/:reservation_id	|GET: Read a single reservation by 'reservation_id'.<br/>
+| /reservations/:reservation_id	|PUT: Update a reservation by 'reservation_id'.<br/>
+| /reservations/:reservation_id	|DELETE: Delete a reservation by 'reservation_id'.<br/>
+| /reservations/:reservation_id/status	|PUT: Update a reservation's status. Options being "booked", "seated", or "finished".<br/>
+| /tables	|GET: List all tables.<br/>
+| /tables	|POST: Create a new table.<br/>
+| /tables/:table_id	|GET: Read a single table by 'table_id'.<br/>
+| /tables/:table_id	|DELETE: Delete a table by 'table_id'.<br/>
+| /tables/:table_id/seat	|PUT: Update a table's status to "occupied".<br/>
+| /tables/:table_id/seat	|DELETE: Update a table's status to "free".<br/>
 
 ## Project Tech Stack
 
