@@ -20,6 +20,7 @@ This app is intended for restaurants, bars, or any other spaces that take reserv
 •Allows for users to create tables. <br/>
 •Reservations can be sat at the tables and finished when they are done. <br/>
 •Allows for users to search for existing reservations by phone number. <br/>
+•Each reservation displays first and last name, mobile number, date, time, and capacity of reservation
 
 ## API Documentation
 | API Path | Method(s)<br/> |
